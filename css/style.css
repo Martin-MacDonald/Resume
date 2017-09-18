@@ -1,0 +1,93 @@
+body{
+	height: 100vh;
+	background-image: url("../images/bgnd_image.jpeg");
+	background-origin: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -2;
+}
+
+.bgnd-cover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,0.4);
+	z-index: -1;
+}
+
+header{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: auto;
+}
+
+h1{
+	color: white;
+	margin-right: 20px;
+}
+
+.bars-icon{
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.x-icon{
+	display: none;
+	color: #ffffff;
+	font-size: 30px;
+	z-index: 1;
+}
+
+.main-nav{
+	background-color: #000000;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center;
+}
+
+.main-nav a{
+	margin: 10px;
+	color: #ffffff;
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+	.bars-icon{
+		display: none;
+	}
+
+	.main-nav{
+		background-color: initial;
+		position: static;
+		height: initial;
+		width: initial;
+		display: initial;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
