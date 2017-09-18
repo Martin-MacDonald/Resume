@@ -3,7 +3,7 @@ $(document).ready(function(){
 	if ($(window).width() < 992){
 
 		$(".main-nav").hide();
-		
+
 	}
 
 	$(window).resize(function(){
@@ -26,7 +26,6 @@ $(document).ready(function(){
 	$(".bars-icon").click(function(){
 
 		$(".main-nav").slideDown(500);
-		$(".bars-icon").hide();
 		$(".x-icon").show();
 
 	});
@@ -34,9 +33,16 @@ $(document).ready(function(){
 	$(".x-icon").click(function(){
 
 		$(".main-nav").slideUp(500);
-		$(".bars-icon").show();
 		$(".x-icon").hide();
 
+	});
+
+	$(".main-nav a").click(function(){
+		if ($(window).width() < 992){
+
+			$(".main-nav").slideUp(500);
+			$(".x-icon").hide();
+		}
 	});
 
 });
